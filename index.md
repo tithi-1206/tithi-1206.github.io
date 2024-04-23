@@ -1,12 +1,4 @@
----
-layout: post
-title: "A Step-by-Step Guide to Uploading Container Images to Dockerhub"
-date: 2024-04-26 10:00:00 +0300
-categories: [tutorial, docker, devops]
-tags: [docker, dockerhub, containerization, tutorial]
----
 
-# A Step-by-Step Guide to Uploading Container Images to Dockerhub
 
 Following is the tutorial on uploading container images to Dockerhub! In this guide, we'll walk you through the process of sharing your Docker images with others or deploying them to production environments using Dockerhub's cloud-based registry service.
 
@@ -44,7 +36,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-![Alt text](image1.png)
+![Alt text](image1.PNG)
 
 
 ## Step 2: Tag Your Docker Image
@@ -55,7 +47,7 @@ Once you have built your Docker image, you need to tag it with your Dockerhub us
 docker tag <image-id> <your-dockerhub-username>/<repository-name>:<tag>
 ```
 
-![Alt text](image2.png)
+![Alt text](image2.PNG)
 
 
 Replace <image-id> with the ID of your Docker image (you can find this by running docker images), <your-dockerhub-username> with your Dockerhub username, <repository-name> with the name of your repository on Dockerhub, and <tag> with a version tag for your image (e.g., latest).
@@ -68,7 +60,7 @@ Before you can push your Docker image to Dockerhub, you need to login to your Do
 docker login
 ```
 
-![Alt text](image3.png)
+![Alt text](image3.PNG)
 
 
 Enter your Dockerhub username and password when prompted.
@@ -81,7 +73,7 @@ Finally, you can push your Docker image to Dockerhub using the following command
 docker push <your-dockerhub-username>/<repository-name>:<tag>
 ```
 
-![Alt text](image4.png)
+![Alt text](image4.PNG)
 
 
 Replace <your-dockerhub-username>, <repository-name>, and <tag> with the corresponding values.
