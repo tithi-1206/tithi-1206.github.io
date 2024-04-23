@@ -47,7 +47,7 @@ Once you have built your Docker image, you need to tag it with your Dockerhub us
 docker tag <image-id> <your-dockerhub-username>/<repository-name>:<tag>
 ```
 
-![Alt text](image2.png)
+![Alt text](image2.PNG)
 
 
 Replace <image-id> with the ID of your Docker image (you can find this by running docker images), <your-dockerhub-username> with your Dockerhub username, <repository-name> with the name of your repository on Dockerhub, and <tag> with a version tag for your image (e.g., latest).
@@ -60,7 +60,7 @@ Before you can push your Docker image to Dockerhub, you need to login to your Do
 docker login
 ```
 
-![Alt text](image3.png)
+![Alt text](image3.PNG)
 
 
 Enter your Dockerhub username and password when prompted.
@@ -73,7 +73,7 @@ Finally, you can push your Docker image to Dockerhub using the following command
 docker push <your-dockerhub-username>/<repository-name>:<tag>
 ```
 
-![Alt text](image4.png)
+![Alt text](image4.PNG)
 
 
 Replace <your-dockerhub-username>, <repository-name>, and <tag> with the corresponding values.
