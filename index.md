@@ -20,7 +20,7 @@ We'll start by creating the presentation tier, which will be a basic HTML/CSS pa
 mkdir my-app
 cd my-app
 Create index.html:
-![Alt Text](IMG6.png)
+![Alt Text](5.PNG)
 
 Step 2: Building the Application Tier (Backend)
 Next, we'll create the application tier, which will be a Node.js server serving some data.
@@ -29,7 +29,7 @@ mkdir backend
 cd backend
 Create server.js:
 
-![Alt Text](6.png)
+![Alt Text](6.PNG)
 
 Step 3: Configuring the Data Tier (Database)
 For the data tier, we'll use the official MySQL Docker image for the database. However, for brevity, we'll skip the setup in this tutorial.
@@ -40,24 +40,24 @@ Now, we'll containerize each tier using Docker.
 Frontend Dockerfile
 Dockerfile
 # Dockerfile for presentation tier
-![Alt Text](7.png)
+![Alt Text](7.PNG)
 
 # Dockerfile for application tier
-![Alt Text](8.png)
+![Alt Text](8.PNG)
 
 Step 5: Building Docker Images
 Build Docker images for each tier:
 docker build -t presentation-tier .
 docker build -t application-tier ./backend
-![Alt Text](1.png)
-![Alt Text](2.png)
+![Alt Text](1.PNG)
+![Alt Text](2.PNG)
 
 Step 6: Running Docker Containers
 Run containers for frontend and backend:
 docker run --name frontend-container -d -p 80:80 presentation-tier
 docker run --name backend-container -d -p 3000:3000 application-tier
-![Alt Text](3.png)
-![Alt Text](4.png)
+![Alt Text](3.PNG)
+![Alt Text](4.PNG)
 
 Step 7: Accessing the Application
 Access the frontend at http://localhost and the backend at http://localhost:3000.
