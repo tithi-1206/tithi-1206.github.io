@@ -36,7 +36,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-![Alt text](image1.png)
+![Alt text](image1.PNG)
 
 
 ## Step 2: Tag Your Docker Image
